@@ -3,6 +3,54 @@ body {
   margin: 0;
 }
 
+{
+  background-color: #CED9E5;
+}
+
+/* Text color */
+h1, h2, h3, p {
+  color: #202A44;
+}
+
+/* Border color */
+.border {
+  border: 2px solid #53565A;
+}
+
+/* Link color */
+a {
+  color: #1B365D;
+}
+
+/* Hover color */
+a:hover {
+  color: #7089AC;
+}
+
+/* Primary color */
+.primary {
+  color: #1B365D;
+  background-color: #7089AC;
+}
+
+/* Lighter shade */
+.light {
+  color: #202A44;
+  background-color: #CED9E5;
+}
+
+/* Darker shade */
+.dark {
+  color: #CED9E5;
+  background-color: #202A44;
+}
+
+/* Neutral shade */
+.neutral {
+  color: #888B8D;
+  background-color: #E1DFDD;
+}
+
 nav {
   background-color: #333;
   color: #fff;
