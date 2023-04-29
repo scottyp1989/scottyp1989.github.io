@@ -230,15 +230,21 @@ footer {
   padding: 30px;
 }
 
+.footer-left {
+  flex-basis:33%;
+  max-width:33%;
+  text-align:left;
+}
+
 .footer-center {
-  flex-basis: 50%;
-  max-width: 50%;
+  flex-basis: 33%;
+  max-width: 33%;
   text-align: center;
 }
 
 .footer-right {
-  flex-basis: 50%;
-  max-width: 50%;
+  flex-basis: 33%;
+  max-width: 33%;
   text-align: right;
 }
 
