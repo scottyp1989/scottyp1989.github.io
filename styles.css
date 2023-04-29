@@ -70,7 +70,7 @@ header .phone {
 /* Hero section styles */
 #hero {
   height: 600px;
-  background-image: url('path/to/hero-image.jpg');
+  background-image: url('img/4-4.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -315,15 +315,15 @@ footer a {
 }
 
 .facebook-icon {
-  background-image: url('facebook-icon.png');
+  background-image: url('facebook.png');
 }
 
 .instagram-icon {
-  background-image: url('instagram-icon.png');
+  background-image: url('instagram.png');
 }
 
 .youtube-icon {
-  background-image: url('youtube-icon.png');
+  background-image: url('img/youtube.png');
 }
 
 /* General styles */
@@ -384,17 +384,17 @@ footer a {
 }
 
 .repairs-icon {
-  background-image: url('repairs-icon.png');
+  background-image: url('img/repair-tool.png');
 }
 
 .servicing-icon {
-  background-image: url('servicing-icon.png');
+  background-image: url('img/repair-tool.png');
 }
 
 .restorations-icon {
-  background-image: url('restorations-icon.png');
+  background-image: url('img/car.png');
 }
 
 .spare-parts-icon {
-  background-image: url('spare-parts-icon.png');
+  background-image: url('img/car.png');
 }
