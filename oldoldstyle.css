@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #1B365D;
+  --lighter-shades: #7089AC, #CED9E5;
+  --darker-shades: #202A44, #53565A;
+  --neutral-shades: #888B8D, #A7A8A9, #C8C9C7, #E1DFDD;
+}
+
+/* General styles */
+
+html {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--neutral-shades);
+}
+
+/* Header styles */
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styles */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Responsive styles */
+
+/* Mobile styles */
+main {
+  padding: 5px;
+}
+
+nav ul {
+  flex-direction: column;
+}
+
+nav ul li {
+  padding: 5px;
+}
+
+.prev, .next {
+  font-size: 14px;
+  padding: 3px;
+}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  .prev, .next {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
