@@ -1,41 +1,36 @@
-// Slideshow gallery
+// Smooth scrolling for anchor links
+$(document).on('click', 'a[href^="#"]', function(event) {
+  event.preventDefault();
 
-var slideIndex = 1;
-showSlides(slideIndex);
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top - 100
+  }, 500);
+});
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// Change active class on navigation
+$(window).on('scroll', function() {
+  $('.nav-link').each(function() {
+    if ($($(this).attr('href')).offset().top <= $(window).scrollTop() + 100) {
+      $(this).addClass('active');
+      $(this).parent().siblings().find('.nav-link').removeClass('active');
+    }
+  });
+});
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// Mobile menu toggle
+$('.nav-toggle').on('click', function() {
+  $(this).toggleClass('open');
+  $('.navbar-menu').toggleClass('open');
+});
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = slides.length
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+// Close mobile menu on click
+$('.navbar-menu a').on('click', function() {
+  $('.nav-toggle').removeClass('open');
+  $('.navbar-menu').removeClass('open');
+});
 
-// Menu toggle
-
-var menuToggle = document.getElementById("menu-toggle");
-var menu = document.getElementById("menu");
-
-menuToggle.addEventListener("click", function() {
-  menu.classList.toggle("show-menu");
+// Initiate AOS animation library
+AOS.init({
+  duration: 1000,
+  once: true
 });
