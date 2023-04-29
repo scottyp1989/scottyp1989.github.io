@@ -46,7 +46,7 @@ header {
 .phone_number p {
   margin: 0;
   color: #073498;
-  font-size: 14px;
+  font-size: 28px;
   font-weight: 600;
 }
 nav ul li {
@@ -97,7 +97,7 @@ nav ul li a:hover {
 }
 
 #services {
-  background-color: #f7f7f7;
+  background-color: #073498;
   padding: 100px 50px;
   text-align: center;
 }
