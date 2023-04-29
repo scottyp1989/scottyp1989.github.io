@@ -42,8 +42,6 @@ header {
 .phone-number {
   display: flex;
   align-items: center;
-  }
-.phone_number p {
   margin: 0;
   color: #073498;
   font-size: 28px;
