@@ -183,7 +183,7 @@ img {
 form {
   max-width: 500px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 label {
@@ -200,7 +200,7 @@ textarea {
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid #ccc;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 textarea {
