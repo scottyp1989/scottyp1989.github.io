@@ -165,13 +165,13 @@ nav ul li a:hover {
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
 .float-left {
   float: left;
-  margin-right: 15px;
+  margin-right: 50px;
 }
 
 /* Contact Us section */
