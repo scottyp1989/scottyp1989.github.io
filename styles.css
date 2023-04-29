@@ -43,8 +43,8 @@ header {
   display: flex;
   align-items: center;
   margin: 0;
-  color: #073498;
-  font-size: 28px;
+  color: ##777;
+  font-size: 18px;
   font-weight: 600;
 }
 nav ul li {
@@ -141,7 +141,6 @@ nav ul li a:hover {
 }
 
 /* About Us section */
-
 #about-us {
   background-color: #f8f8f8;
   padding: 50px 0;
@@ -151,6 +150,7 @@ nav ul li a:hover {
   margin: 0 auto;
   max-width: 1140px;
   width: 100%;
+  overflow: hidden;
 }
 
 .row {
@@ -168,9 +168,14 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin-right: 20px;
   max-width: 100%;
   padding: 15px;
+  float: left;
+}
+
+.text {
+  float: left;
 }
 
 /* Contact Us section */
